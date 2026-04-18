@@ -1,0 +1,73 @@
+.hero {
+  position: relative;
+  background-image: url("../assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+
+  .blur-ellipses {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    /* overflow: hidden; */
+  }
+
+  .ellipse {
+    position: absolute;
+    background-color: var(--pink-low);
+    border-radius: 50%;
+  }
+
+  .ellipse-1 {
+    width: 241px;
+    height: 241px;
+    top: 30%;
+    right: -5%;
+    filter: blur(468px);
+  }
+
+  .ellipse-2 {
+    width: 491px;
+    height: 491px;
+    top: 70%;
+    right: -20%;
+    filter: blur(668px);
+  }
+
+  .ellipse-3 {
+    width: 538px;
+    height: 538px;
+    bottom: -75%;
+    left: 15%;
+    filter: blur(868px);
+  }
+
+  .ellipse-4 {
+    width: 376px;
+    height: 376px;
+    bottom: 5%;
+    left: -20%;
+     filter: blur(508px);
+  }
+
+  & header.top {
+    position: relative;
+    /* z-index: 1; */
+    padding-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (width >= 80em) {
+  .hero {
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+    & header.top {
+      padding-top: 3.5rem;
+    }
+  }
+}

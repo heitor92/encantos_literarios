@@ -42,10 +42,10 @@
   --subtitle: 500 2rem/200% var(--ff-base);
 
   /* Body */
-  --body-lg: 1.25rem/140% var(--ff-base);
-  --body-md: 1rem/140% var(--ff-base);
-  --body-sm: 0.875rem/140% var(--ff-base);
-  --body-xs: 0.75rem/140% var(--ff-base);
+  --body-lg: 400 1.25rem/140% var(--ff-base);
+  --body-md: 400 1rem/140% var(--ff-base);
+  --body-sm: 400 0.875rem/140% var(--ff-base);
+  --body-xs: 400 0.75rem/140% var(--ff-base);
 
   /* Button */
   --button: bold 0.875rem/normal var(--ff-base);
@@ -60,7 +60,7 @@
 html {
   color: var(--text-body);
   font: var(--body-md);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 body {
@@ -70,4 +70,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-title);
+}
+
+@media (width < 80em) {
+  :root {
+    --title-lg: bold 1.75rem/normal var(--ff-base);
+    --body-lg: 400 0.875rem/140% var(--ff-base);
+    --subtitle: 400 1rem/140% var(--ff-base);
+  }
 }

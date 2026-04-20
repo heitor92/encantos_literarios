@@ -3,64 +3,64 @@
 }
 
 .container {
-  width: 20.9375rem;
   margin-inline: auto;
+  width: 20.9375rem;
 }
 
 /* Classes utilitárias */
 .title-lg {
   font: var(--title-lg);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .title-md {
   font: var(--title-md);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .title-sm {
   font: var(--title-sm);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .title-xs {
   font: var(--title-xs);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .subtitle {
   font: var(--subtitle);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .body-lg {
   font: var(--body-lg);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .body-md {
   font: var(--body-md);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .body-sm {
   font: var(--body-sm);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .body-xs {
   font: var(--body-xs);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .button {
   font: var(--button);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .link {
   font: var(--link);
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .tag {
@@ -79,6 +79,6 @@
   }
 
   .container {
-    width: 70rem;
+    width: 75rem;
   }
 }

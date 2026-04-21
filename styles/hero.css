@@ -2,6 +2,47 @@
   position: relative;
 
   & div.container.hero-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 1.75rem;
+
+    & div {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: inherit;
+      height: 100px;
+      /* padding-inline: 1.75rem; */
+      position: relative;
+
+      & img[src*="ouija-planchette"] {
+        width: 32px;
+        height: 32px;
+        transform: rotate(-30deg);
+        position: absolute;
+        left: 0;
+        top: -10px;
+      }
+
+      & img[src*="crystal-ball"] {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: rotate(20deg);
+      }
+    }
+
+    & img[src*="spellbook"] {
+      width: 40px;
+      height: 40px;
+      margin-right: 3.375rem;
+      margin-bottom: .5rem;
+      transform: rotate(30deg);
+    }
+
     & p.subtitle {
       text-align: center;
 
@@ -12,11 +53,12 @@
   }
 
   & div.bg-image {
+    --height: 464px;
     background-image: url("../assets/images/hero-background.png");
-    background-size: cover;
-    background-position: center center;
+    background-size: auto var(--height);
+    background-position: top center;
     background-repeat: no-repeat;
-    min-height: 70vh;
+    min-height: var(--height);
 
     & header.top {
       padding-top: 1.25rem;
@@ -90,10 +132,6 @@
   .hero {
     & div.bg-image {
       --height: 830px;
-      background-size: auto var(--height);
-      background-position: top center;
-      /* margin-inline: auto; */
-      min-height: var(--height);
 
       & header.top {
         padding-top: 3.5rem;
@@ -108,6 +146,38 @@
         & p {
           padding-inline: 5rem;
         }
+      }
+    }
+
+    & div.container.hero-subtitle {
+      margin-top: 6rem;
+      align-items: center;
+
+      & div {
+        margin-top: .5rem;
+        position: initial;
+        height: 200px;
+
+        & img[src*="ouija-planchette"] {
+          position: initial;
+          width: 80px;
+          height: 80px;
+          transform: rotate(90deg);
+        }
+
+        & img[src*="crystal-ball"] {
+          position: initial;
+          width: 72px;
+          height: 72px;
+          transform: rotate(-20deg);
+        }
+      }
+
+      & img[src*="spellbook"] {
+        width: 88px;
+        height: 88px;
+        margin-bottom: .75rem;
+        transform: rotate(30deg);
       }
     }
 

@@ -1,5 +1,7 @@
 .hero {
   position: relative;
+  height: max-content;
+  /* overflow-x: hidden; */
 
   & div.container.hero-subtitle {
     display: flex;
@@ -12,7 +14,6 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       width: inherit;
-      height: 100px;
       /* padding-inline: 1.75rem; */
       position: relative;
 
@@ -82,54 +83,12 @@
     }
   }
 
-  .blur-ellipses {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  & .ellipse {
-    position: absolute;
-    background-color: var(--pink-low);
-    border-radius: 50%;
-  }
-
-  & .ellipse-1 {
-    width: 99.6px;
-    height: 99.6px;
-    top: 60%;
-    right: -30%;
-    filter: blur(193px);
-  }
-
-  & .ellipse-2 {
-    width: 202px;
-    height: 202px;
-    top: 80%;
-    right: -55%;
-    filter: blur(276px);
-  }
-
-  & .ellipse-3 {
-    width: 222px;
-    height: 222px;
-    bottom: -60%;
-    left: 0;
-    filter: blur(358px);
-  }
-
-  & .ellipse-4 {
-    width: 155px;
-    height: 155px;
-    top: 70%;
-    left: -70%;
-    filter: blur(209px);
-  }
 }
 
 @media (width >= 80em) {
   .hero {
+    height: max-content;
+
     & div.bg-image {
       --height: 830px;
 
@@ -155,8 +114,6 @@
 
       & div {
         margin-top: .5rem;
-        position: initial;
-        height: 200px;
 
         & img[src*="ouija-planchette"] {
           position: initial;
@@ -179,38 +136,6 @@
         margin-bottom: .75rem;
         transform: rotate(30deg);
       }
-    }
-
-    & .ellipse-1 {
-      width: 241px;
-      height: 241px;
-      top: 30%;
-      right: -5%;
-      filter: blur(468px);
-    }
-
-    & .ellipse-2 {
-      width: 491px;
-      height: 491px;
-      top: 70%;
-      right: -20%;
-      filter: blur(668px);
-    }
-
-    & .ellipse-3 {
-      width: 538px;
-      height: 538px;
-      bottom: -75%;
-      left: 15%;
-      filter: blur(868px);
-    }
-
-    & .ellipse-4 {
-      width: 376px;
-      height: 376px;
-      bottom: 5%;
-      left: -20%;
-      filter: blur(508px);
     }
   }
 }

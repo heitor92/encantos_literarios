@@ -65,7 +65,56 @@ html {
 
 body {
   background-color: var(--shape-background);
+  overflow-x: hidden;
+  position: relative;
+
+  & .bg-ellipses {
+    z-index: 100;
+    position: absolute;
+    inset: 0;
+    & .ellipse {
+      position: absolute;
+      background-color: var(--pink-low);
+      border-radius: 50%;
+    }
+
+    & .ellipse:nth-child(1) {
+      width: 491px;
+      height: 491px;
+      filter: blur(668px);
+      right: -18%;
+      top: 26%;
+    }
+
+    & .ellipse:nth-child(2) {
+      width: 376px;
+      height: 376px;
+      filter: blur(508px);
+      top: 20%;
+      left: -16%;
+    }
+
+    & .ellipse:nth-child(3) {
+      width: 538px;
+      height: 538px;
+      left: 12%;
+      top: 35%;
+      filter: blur(868px);
+    }
+
+    & .ellipse:nth-child(4) {
+      width: 241px;
+      height: 241px;
+      right: -8%;
+      top: 14%;
+      filter: blur(468px);
+    }
+
+
+  }
 }
+
+
 
 a {
   color: inherit;
@@ -79,7 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (width < 80em) {
   :root {
     --title-lg: bold 1.75rem/normal var(--ff-base);
+    --title-sm: bold 1.5rem/normal var(--ff-base);
     --body-lg: 400 0.875rem/140% var(--ff-base);
+    --body-md: 400 .875rem/140% var(--ff-base);
     --subtitle: 400 1rem/140% var(--ff-base);
   }
 }

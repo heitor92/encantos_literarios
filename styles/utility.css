@@ -69,13 +69,6 @@
   letter-spacing: 5%;
 }
 
-.icon-stars {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  /* background-color: var(--pink-base); */
-}
-
 @media (width >= 80em) {
   .desktop-only {
     display: initial;
@@ -87,10 +80,5 @@
 
   .container {
     width: 75rem;
-  }
-
-  .icon-stars {
-    width: 32px;
-    height: 32px;
   }
 }

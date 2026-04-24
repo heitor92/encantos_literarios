@@ -69,7 +69,7 @@ body {
   position: relative;
 
   & .bg-ellipses {
-    z-index: 100;
+    z-index: -100;
     position: absolute;
     inset: 0;
     & .ellipse {
@@ -110,6 +110,15 @@ body {
       filter: blur(468px);
     }
 
+    & .ellipse:nth-child(5) {
+      width: 930px;
+      height: 930px;
+      inset: 0;
+      top: 64%;
+      margin: auto;
+      filter: blur(600px);
+    }
+
 
   }
 }
@@ -132,5 +141,49 @@ h1, h2, h3, h4, h5, h6 {
     --body-lg: 400 0.875rem/140% var(--ff-base);
     --body-md: 400 .875rem/140% var(--ff-base);
     --subtitle: 400 1rem/140% var(--ff-base);
+  }
+
+  body {
+    & .bg-ellipses {
+      & .ellipse:nth-child(1) {
+        width: 202px;
+        height: 202px;
+        right: -60%;
+        top: 29%;
+        filter: blur(276px);
+      }
+
+      & .ellipse:nth-child(2) {
+        width: 155px;
+        height: 155px;
+        top: 22%;
+        left: -60%;
+        filter: blur(209px);
+      }
+
+      & .ellipse:nth-child(3) {
+        width: 222px;
+        height: 222px;
+        left: 0;
+        top: 37%;
+        filter: blur(358px);
+      }
+
+      & .ellipse:nth-child(4) {
+        width: 99px;
+        height: 99px;
+        right: -35%;
+        top: 20%;
+        filter: blur(193px);
+      }
+
+      & .ellipse:nth-child(5) {
+        width: 298px;
+        height: 298px;
+        top: 75%;
+        filter: blur(206px);
+      }
+    }
+
   }
 }

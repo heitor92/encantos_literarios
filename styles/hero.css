@@ -80,7 +80,7 @@
       margin-bottom: 3rem;
     }
 
-    & div.container.hero-tittle {
+    & div.container.hero-title {
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -116,7 +116,7 @@
         margin-bottom: 10.25rem;
       }
 
-      & div.container.hero-tittle {
+      & div.container.hero-title {
         width: 41rem;
         gap: 1rem;
 

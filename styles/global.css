@@ -115,8 +115,8 @@ body {
       height: 930px;
       inset: 0;
       top: 64%;
-      margin: auto;
-      filter: blur(600px);
+      margin-inline: auto;
+      filter: blur(400px);
     }
 
 
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 298px;
         height: 298px;
         top: 75%;
-        filter: blur(206px);
+        filter: blur(106px);
       }
     }
 

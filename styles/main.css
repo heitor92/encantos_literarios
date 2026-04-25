@@ -30,10 +30,13 @@ section.main {
     width: 100%;
     max-width: 1280px;
     aspect-ratio: 16 / 9;
+
     & > p {
       color: var(--text-title);
+      font: 400 .625rem/normal var(--ff-base);
     }
-    & img, & p {
+
+    & img, &  p {
       position: absolute;
       left: 50%;           /* ← âncora no centro */
       top: 50%;            /* ← âncora no centro vertical */
@@ -41,19 +44,65 @@ section.main {
     }
 
     & img[src*="book.png"] {
+      z-index: 1;
       width: 157.19px;
     }
 
     & img[src*="bookmark-yellow"] {
+      z-index: -1;
       width: 58.4px;
+      left: 73%;
+      top: 30%;
+      transform: translate(-50%, -50%) rotate(12deg);
     }
 
     & img[src*="bookmark-purple"] {
+      z-index: -2;
       width: 57.89px;
+      top: 47%;
+      left: 81.5%;
+      transform: translate(-50%, -50%) rotate(22deg);
     }
 
     & img[src*="pin"] {
+      z-index: -3;
       width: 74px;
+      top: 88%;
+      left: 26%;
+      transform: translate(-50%, -50%) rotate(-8deg);
+    }
+
+    & img[src*="arrow-1"] {
+      width: 35.29px;
+      top: 65%;
+      left: 17%;
+    }
+
+    & p:nth-of-type(1) {
+      top: 49%;
+      left: 17%;
+    }
+
+    & img[src*="arrow-2"] {
+      width: 58.74px;
+      top: 1%;
+      left: 25%;
+    }
+
+    & p:nth-of-type(2) {
+      top: -8%;
+      left: 20%;
+    }
+
+    & img[src*="arrow-3"] {
+      width: 48.96px;
+      top: 90%;
+      left: 78%;
+    }
+
+    & p:nth-of-type(3) {
+      top: 107%;
+      left: 73%;
     }
   }
 }
@@ -62,8 +111,11 @@ section.main {
   section.main {
     & div.book-kit {
       & img[src*="book.png"] {
-        z-index: 1;
         width: 467px;
+      }
+
+      & > p {
+        font: inherit;
       }
 
       /* Estado inicial: todos escondidos atrás do livro */
@@ -73,9 +125,11 @@ section.main {
       & img[src*="arrow-1"],
       & img[src*="arrow-2"],
       & img[src*="arrow-3"],
-      & p {
-        left: 50%;
-        top: 50%;
+      & p:nth-of-type(1), 
+      & p:nth-of-type(2), 
+      & p:nth-of-type(3) {
+        left: 50%;           /* ← âncora no centro */
+        top: 50%;            /* ← âncora no centro vertical */
         transition:
           top 0.6s ease,
           left 0.6s ease,
@@ -84,7 +138,6 @@ section.main {
 
       & img[src*="bookmark-yellow"] {
         width: 172px;
-        z-index: -1;
       }
 
       &:hover img[src*="bookmark-yellow"] {
@@ -94,7 +147,6 @@ section.main {
       }
 
       & img[src*="bookmark-purple"] {
-        z-index: -2;
         width: 172px;
       }
 
@@ -105,7 +157,6 @@ section.main {
       }
 
       & img[src*="pin"] {
-        z-index: -3;
         width: 222px;
       }
 
@@ -148,7 +199,6 @@ section.main {
       }
 
       &:hover img[src*="arrow-3"] {
-        width: 145.45px;
         top: 86%;
         left: 73.5%;
       }

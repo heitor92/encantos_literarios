@@ -3,7 +3,7 @@ section.main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding-bottom: 9.0625rem;
   & div.main-title {
     display: flex;
     flex-direction: row;
@@ -14,8 +14,8 @@ section.main {
     margin-block: 14.6875rem .3125rem;
 
     & svg.star-icon {
-        filter: drop-shadow(0 0 28px #8F3B9E80);
-        & path {
+      filter: drop-shadow(0 0 28px #8F3B9E80);
+      & path {
           fill: var(--pink-base);
       }
     }
@@ -109,6 +109,7 @@ section.main {
 
 @media (width >= 80em) {
   section.main {
+    padding-block: 14.6875rem 27.9375rem;
     & div.book-kit {
       & img[src*="book.png"] {
         width: 467px;

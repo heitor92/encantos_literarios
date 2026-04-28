@@ -72,6 +72,7 @@ body {
     z-index: -100;
     position: absolute;
     inset: 0;
+    overflow-x: hidden;
     & .ellipse {
       position: absolute;
       background-color: var(--pink-low);
@@ -119,6 +120,15 @@ body {
       filter: blur(400px);
     }
 
+    & .ellipse:nth-child(6) {
+        width: 944px;
+        height: 944px;
+        inset: 0;
+        margin-inline: auto;
+        top: 73%;
+        background-color: var(--shape-base);
+        filter: blur(568px);
+      }
 
   }
 }
@@ -184,8 +194,12 @@ ul {
       & .ellipse:nth-child(5) {
         width: 298px;
         height: 298px;
-        top: 35%;
-        filter: blur(106px);
+        top: 45%;
+        filter: blur(206px);
+      }
+
+      & .ellipse:nth-child(6) {
+        display: none;
       }
     }
 

@@ -19,12 +19,32 @@ footer {
         gap: 1.5rem;
         flex-direction: column;
 
+        & div.line {
+          outline: 1px solid var(--shape-stroke);
+          width: 100%;
+        }
+
         & div.social-group {
           display: flex;
           gap: .875rem;
           & a {
-            width: 24px;
-            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+
+            &:hover {
+              background-color: var(--shape-stroke);
+              & svg {
+                width: 24px;
+                height: 24px;
+                & path {
+                  fill: var(--text-body);
+                }
+              }
+            }
           }
 
           & svg {
@@ -45,6 +65,10 @@ footer {
           gap: 1.25rem;
           & li:not(:has(strong)) {
             color: var(--blue-light);
+
+            &:hover {
+              color: var(--text-body);
+            }
           }
         }
       }

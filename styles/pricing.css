@@ -91,9 +91,6 @@ section.pricing {
               fill: var(--blue-base);
             }
         }
-        & a.btn.button {
-          background-color: var(--blue-dark);
-        }
       }
 
       &:nth-of-type(2) {

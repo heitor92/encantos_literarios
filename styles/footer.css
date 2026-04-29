@@ -1,0 +1,69 @@
+footer {
+  --height: 460px;
+  padding-block: 10.625rem 2.375rem;
+  width: 100%;
+  height: var(--height);
+  background-image: url("../assets/images/book-trace-background.png");
+  background-size: 100vw var(--height);
+  background-position: top center;
+  background-repeat: no-repeat;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+
+      & > div:nth-of-type(1) {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 1.5rem;
+        flex-direction: column;
+
+        & div.social-group {
+          display: flex;
+          gap: .875rem;
+          & a {
+            width: 24px;
+            height: 24px;
+          }
+
+          & svg {
+            & path {
+              fill: var(--blue-base);
+            }
+          }
+        }
+      }
+      & > div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+          & li:not(:has(strong)) {
+            color: var(--blue-light);
+          }
+        }
+      }
+    }
+
+
+}
+
+
+@media (width >= 80em) {
+  footer {
+    & > div {
+      justify-content: space-between;
+      flex-direction: row;
+
+      & > div:nth-of-type(2) {
+        display: flex;
+        gap: 3.5rem;
+      }
+    }
+  }
+}

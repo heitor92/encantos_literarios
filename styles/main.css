@@ -14,6 +14,8 @@ section.main {
     margin-block: 14.6875rem .3125rem;
 
     & svg.star-icon {
+      width: 20px;
+      height: 20px;
       filter: drop-shadow(0 0 28px #8F3B9E80);
       & path {
           fill: var(--pink-base);
@@ -110,6 +112,14 @@ section.main {
 @media (width >= 80em) {
   section.main {
     padding-block: 14.6875rem 27.9375rem;
+
+    & div.main-title {
+       & svg.star-icon {
+        width: 32px;
+        height: 32px;
+       }
+    }
+
     & div.book-kit {
       & img[src*="book.png"] {
         width: 467px;

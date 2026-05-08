@@ -115,7 +115,7 @@ body {
       width: 930px;
       height: 930px;
       inset: 0;
-      top: 40%;
+      top: 36%;
       margin-inline: auto;
       filter: blur(400px);
     }
@@ -125,7 +125,7 @@ body {
         height: 944px;
         inset: 0;
         margin-inline: auto;
-        top: 73%;
+        top: 70%;
         background-color: var(--shape-base);
         filter: blur(568px);
       }

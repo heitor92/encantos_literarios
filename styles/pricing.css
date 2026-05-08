@@ -10,6 +10,7 @@ section.pricing {
     margin-top: 6.5rem;
     text-align: center;
     & > span {
+      margin-top: .875rem;
       display: block;
     }
   }

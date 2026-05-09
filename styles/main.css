@@ -3,7 +3,7 @@ section.main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 9.0625rem;
+  padding-block: 0 9.0625rem;
   & div.main-title {
     display: flex;
     flex-direction: row;
@@ -111,7 +111,7 @@ section.main {
 
 @media (width >= 80em) {
   section.main {
-    padding-block: 14.6875rem 27.9375rem;
+    padding-block: 14.6875rem 19.5625rem;
 
     & div.main-title {
        & svg.star-icon {

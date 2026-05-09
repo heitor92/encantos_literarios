@@ -112,8 +112,8 @@ body {
     }
 
     & .ellipse:nth-child(5) {
-      width: 930px;
-      height: 930px;
+      width: 730px;
+      height: 730px;
       inset: 0;
       top: 36%;
       margin-inline: auto;
